@@ -1,0 +1,27 @@
+1. een switch statement wordt gebruikt om verschillende voorwaardes uit te voeren.
+
+2. values vooraf defineren in laats van opvragen
+
+3. zonder break blijft de code uitvoeren. 
+
+4. "Konijn!"
+
+5. "Konijn!"
+
+6. niks
+
+7. "Konijn! Koe! Vos!'
+
+8. "Koe! Vos!"
+
+9. "Vos!"
+
+10. "Vos!"
+
+11. "Vos!"
+
+12. "Konijn!"
+
+13. een statement voert code uit en een expression veranderd gegevens
+
+14. x =>a && <b ? x * 2 : x / 2

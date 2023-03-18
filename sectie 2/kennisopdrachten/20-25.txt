@@ -1,0 +1,75 @@
+1. ?
+
+2. Number()
+
+3. String()
+
+4. 43
+
+5. -12
+
+6. 13
+
+7. 37
+
+8. "5512"
+
+9. 22
+
+10. "5512"
+
+11. values die als false uitkomen in een boolean.
+
+12. values die als true uitkomen in een boolean.
+
+13. Niet waar!
+
+14. Niet waar!
+
+15. Niet waar!
+
+16. Waar!
+
+17. Niet waar!
+
+18. Waar!
+
+19. Niet waar!
+
+20. Niet waar!
+
+21. Waar!
+
+22. == betekend equal to en === betekend equal value and equal type
+
+23. "Ok..."
+
+24. "Het begin van het begin"
+
+25. "Ok..."
+
+26. ja.
+
+27. ja.
+
+28. nee.
+
+29. ja.
+
+30. nee.
+
+31. in een boolean willen ze meestal de true statement weten. met ! ervoor willen ze de false statement weten.
+
+32. true
+
+33. true
+
+34. true
+
+35. "You do something you like, probably in the public sector"
+
+36. "You do something you like, probably in the public sector"
+
+37. "I want JUNKFOOD!"
+
+38. 

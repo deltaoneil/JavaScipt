@@ -1,0 +1,17 @@
+1. een string is een variabele tekst.
+
+2. "
+
+3. Jorn is stupid
+
+4. Jorn is briljant
+
+5. Hello ${firstname}
+
+6. am is geen variabele naam.
+
+7. boolean.
+
+8. iets waarmee je je code kunt testen.
+
+9. als het werkt dan krijg je een resultaat en als het niet werkt krijg je niets.
