@@ -1,0 +1,75 @@
+1. 	const voornaam = "Delta";
+	const achternaam = "O'Neil";
+	const leeftijd = 17;
+	
+	console.log(voornaam + " " + achternaam + " " + leeftijd);
+
+2. 	const voornaam = "Delta";
+	
+	console.log("Mijn naam is " + voornaam);
+
+3. 	const voornaam = "Delta";
+	const achternaam = "O'Neil";
+
+	console.log("Mijn volledige naam is " + voornaam +  " " + achternaam);
+
+4. 	const geboorteJaar = 2005;
+	const jaar = 2056;
+	const berekening = jaar - geboorteJaar;
+
+	console.log("In " + jaar + " ben ik " + berekening + " jaar oud.");
+
+5. 	const voornaam = "Delta";
+	const achternaam = "O'Neil";
+	const leeftijd = 17;
+
+	console.log("Mijn naam is " + voornaam + " en ik ben " + leeftijd + " jaar oud. Daarnaast is mijn familienaam " + achternaam);
+
+6.	const weer = "regen";
+	
+	if(weer === "regen"){
+		console.log("Het regent, dus ik neem een paraplu mee.");
+	}else{
+		console.log("Het regent niet, dus ik zet mijn zonnebril op.")
+	}
+
+7.	const grasGeel = true;
+	
+	if(grasGeel === true){
+		console.log("Geef je kk gras water.");
+	}else{
+		console.log("Laat je kk gras met rust.");
+	}
+
+8.	const seizoen = "winter";
+	
+	if(seizoen === "winter"){
+		console.log("Zet je verwarming aan.");
+	}else{
+		console.log("Ik dans op de tafel.");
+	}
+
+9.	const regen = true;
+	const hoeveelheid = "keiHard";
+
+	if(regen === true){
+		if(hoeveelheid === "keiHard"){
+			console.log("Trek een regen pak aan.");
+		}else{
+			console.log("Neem een paraplu mee.");
+		}
+	}else{
+		console.log("Zet je zonnebril op.");
+	}
+
+
+
+
+
+
+
+
+
+
+
+

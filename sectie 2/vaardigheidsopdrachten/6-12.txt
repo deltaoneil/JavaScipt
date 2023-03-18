@@ -1,0 +1,109 @@
+1.	const huidigeSchool = 2;
+	const vorigeSchool = 3; 
+	const hoogsteDiploma = 10;
+	
+	console.log(huidigeSchool, vorigeSchool, hoogsteDiploma);
+
+2. 	const age = 17;
+	
+	console.log(age);
+
+3. 	String
+
+4.	Number
+
+5.	String
+
+6. 	boolean
+
+7. 	String 
+
+8. 	String
+
+9. 	//vergeet geen + " " erbij te zetten
+
+10.	
+
+11.	const geboorteJaar = 2005;
+	const huidigeJaar = 2023;
+	const alJarig = false;
+	const myAge = huidigeJaar - geboorteJaar;
+
+12.	if(alJarig == false){
+		console.log(myAge - 1);
+	}else{
+	 	console.log(myAge);
+	}
+
+13. 	if(alJarig == false){
+		console.log((myAge - 1) * 2);
+	}else{
+	 	console.log(myAge * 2);
+	}
+
+14.	console.log(2^8);
+
+15.	const street = "Pythagorasstraat";
+	const number = 9;
+	console.log(street + " " + number);
+	
+16. 	const numberOne = 12;
+	const sum = numberOne + 15;
+	console.log(sum);
+
+	console.log(numberOne + 15);
+
+17. 	const numberOne = 12;
+	const sum = numberOne * 15;
+	console.log(sum);
+
+	console.log(numberOne * 15);
+
+18.	const numberOne = 12;
+	const sum = numberOne + 1;
+	console.log(sum);
+
+	console.log(numberOne + 1);
+	
+	console.log(numberOne++);
+
+20.	const lengteMoeder = 178;
+	const lengteVader = 185;
+	const geslachtKind = "meisje";
+	const lengteMeisje = (lengteMoeder + lengteMoeder + lengteMoeder + lengteVader) / 4;
+	const lengteJongen = (lengteVader + lengteVader + lengteVader + lengteMoeder) / 4;
+	
+	if(geslachtKind == "meisje"){
+		console.log("Verwachtte lengte is " + lengteMeisje);	
+	}else if(geslachtKind == "jongen"){
+		console.log("Verwachtte lengte is " + lengteJongen);
+	}
+
+21.	const lengteMoeder = 153;
+	const lengteVader = 192;
+	const geslachtKind = "meisje";
+	const lengteMeisje = (lengteMoeder + lengteMoeder + lengteMoeder + lengteVader) / 4;
+	const lengteJongen = (lengteVader + lengteVader + lengteVader + lengteMoeder) / 4;
+	
+	if(geslachtKind == "meisje"){
+		console.log("Verwachtte lengte is " + lengteMeisje);	
+	}else if(geslachtKind == "jongen"){
+		console.log("Verwachtte lengte is " + lengteJongen);
+	}
+
+22. 	lengte = 180
+	
+23.	gewicht = 101
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+1.	const x = 1;
+	const y = "1";
+	const z = 2;
+
+	console.log((x + z) * 3);
+
+2. 	const x = 1;
+	const y = "1";
+	const z = 2;
+
+	console.log(y - x);
+
+3.	const x = 1;
+	const y = "1";
+	const z = 2;
+
+	console.log(z + y - x);
+
+4. 	const x = 1;
+	const y = "1";
+	const z = 2;
+
+	console.log(y + String(z) + x);
+
+10.	const cijferEen = 9.4;
+	const cijferTwee = 3.8;
+	const cijferDrie = 2.7;
+	const cijferVier = 6.7;
+	const cijferVijf = 8.9;
+
+	console.log((cijferEen + cijferTwee + cijferDrie + cijferVier + cijferVijf)/5);
+
+11.	const cijferEen = 9.4;
+	const cijferTwee = 3.8;
+	const cijferDrie = 2.7;
+	const cijferVier = 6.7;
+	const cijferVijf = 8.9;
+
+	console.log((cijferEen + cijferTwee + cijferDrie + cijferVier + (cijferVijf * 2))/5);
+
+16.	const leeftijd = 17;
+	const studie = true;
+
+	if(leeftijd >= 18 && studie === true){
+		console.log("Whieee stufi!");
+	}else{
+		console.log("Helaas geen studiefinanciering =(");
+	}
+
+17.	const leeftijd = 18;
+	const studie = true;
+	const woonSituatie = "zelfstandig";
+
+	if(leeftijd >= 18 && studie === true){
+		if(woonSituatie === "zelfstandig"){
+			console.log("Whieee veel stufi");
+		}else{
+			console.log("Whieee stufi!");
+		}
+	}else{
+		console.log("Helaas geen studiefinanciering =(");
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+

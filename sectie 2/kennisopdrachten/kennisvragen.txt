@@ -1,0 +1,209 @@
+1. JavaScript is een programmeer taal waarmee je websites interactief kan maken.
+
+2. Je gebruikt JavaScript om elementen van je html en css te veranderen.
+
+3. JavaScript is een hogere level programmeer taal wat inhoud dat het makkelijker te lezen is.
+
+4. Een web applicatie is een app die toegepast wordt op een website.
+
+5. JavaScript ES 6 / ES2015.
+
+6. <script></script>.
+
+7. een getal of text.
+
+8. een variabele is een opslagplek voor values.
+
+9. de naam die je een variabele geeft om hem te defineren.
+
+11. een conventie zijn regels die programmeurs maken over code.
+
+12. Wat is de juiste naamgeving voor de variabele?
+	a. prachtigLeven
+
+13. Welke naamgeving voor de variabele is niet syntactische correct?
+	c. 3hello
+
+14. een syntactische fout is een fout die te maken heeft met een incorrecte code of value.
+
+15. een semantische fout is een fout waarbij de code wel werkt maar het doet niet wat er bedoeld was.
+
+16. een syntactische fout is gemaakt door de computer en een semantische fout is gemaakt door een persoon.
+
+17. datatypes zijn verschillende vormen van variabelen. bijv string of boolean.
+
+18. om je code duidelijker te maken.
+
+19. de ene print het woord herder en de andere print de variabele met de naam herder.
+
+20. een legacy probleem is een probleem wat al bekend is maar wat wel geaccepteerd wordt.
+
+21. Combineer de letters met de juiste cijfers.
+a. 2
+b. 3
+c. 1
+
+22. nee want een const moet gedefineerd worden.
+
+23. nee 
+
+24. = + - / * 
+
+25. = declareert een variabele en == vergelijkt twee variabelen.
+
+26. 20
+
+27. 75
+
+28. false
+
+29. -10
+
+30. false
+
+31. false
+
+32. true
+
+33. -10=5-15
+
+34. 6
+
+35. 75=5*15
+
+36. 6
+
+37. operator precedence is dat sommige operators voorrang hebben op andere operators. 
+
+38. 12
+
+39. 14
+
+40. assignment
+
+
+
+1. een string is een variabele tekst.
+
+2. "
+
+3. Jorn is stupid
+
+4. Jorn is briljant
+
+5. Hello ${firstname}
+
+6. am is geen variabele naam.
+
+7. boolean.
+
+8. iets waarmee je je code kunt testen.
+
+9. als het werkt dan krijg je een resultaat en als het niet werkt krijg je niets.
+
+
+
+1. ?
+
+2. Number()
+
+3. String()
+
+4. 43
+
+5. -12
+
+6. 13
+
+7. 37
+
+8. "5512"
+
+9. 22
+
+10. "5512"
+
+11. values die als false uitkomen in een boolean.
+
+12. values die als true uitkomen in een boolean.
+
+13. Niet waar!
+
+14. Niet waar!
+
+15. Niet waar!
+
+16. Waar!
+
+17. Niet waar!
+
+18. Waar!
+
+19. Niet waar!
+
+20. Niet waar!
+
+21. Waar!
+
+22. == betekend equal to en === betekend equal value and equal type
+
+23. "Ok..."
+
+24. "Het begin van het begin"
+
+25. "Ok..."
+
+26. ja.
+
+27. ja.
+
+28. nee.
+
+29. ja.
+
+30. nee.
+
+31. in een boolean willen ze meestal de true statement weten. met ! ervoor willen ze de false statement weten.
+
+32. true
+
+33. true
+
+34. true
+
+35. "You do something you like, probably in the public sector"
+
+36. "You do something you like, probably in the public sector"
+
+37. "I want JUNKFOOD!"
+
+38. 
+
+
+1. een switch statement wordt gebruikt om verschillende voorwaardes uit te voeren.
+
+2. values vooraf defineren in laats van opvragen
+
+3. zonder break blijft de code uitvoeren. 
+
+4. "Konijn!"
+
+5. "Konijn!"
+
+6. niks
+
+7. "Konijn! Koe! Vos!'
+
+8. "Koe! Vos!"
+
+9. "Vos!"
+
+10. "Vos!"
+
+11. "Vos!"
+
+12. "Konijn!"
+
+13. een statement voert code uit en een expression veranderd gegevens
+
+14. x =>a && <b ? x * 2 : x / 2

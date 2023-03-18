@@ -1,0 +1,133 @@
+1. 	const day = "maandag";
+	switch(day) {
+  		case "maandag":
+    			console.log("falafel met salade");
+    			break;
+ 		case "dinsdag":
+    			console.log("spinazie");
+    			break;
+  		case "woensdag":
+    			console.log("spinazie");
+    			break;
+  		case "donderdag":
+    			console.log("falafel met salade");
+    			break;
+  		case "vrijdag":
+    			console.log("falafel met salade");
+    			break;
+  		case "zaterdag":
+    			console.log("linzensoep");
+    			break;
+      	case "zondag":
+    			console.log("linzensoep");
+    			break;
+  		default:
+    			console.log("vul de dag van de week in zonder hoofdletters of punten");
+	}
+
+2.	const day = "maandag";
+	const kerst = true;
+
+	if(kerst === true){
+		console.log("kalkoen");
+	}else{
+		switch(day) {
+	  		case "maandag":
+	    			console.log("falafel met salade");
+	    			break;
+		 	case "dinsdag":
+	    			console.log("spinazie");
+	    			break;
+	  		case "woensdag":
+	    			console.log("spinazie");
+	    			break;
+  			case "donderdag":
+    				console.log("falafel met salade");
+   	 			break;
+  			case "vrijdag":
+    				console.log("falafel met salade");
+	    			break;	
+	  		case "zaterdag":
+	    			console.log("linzensoep");
+	    			break;	
+	      	case "zondag":
+	    			console.log("linzensoep");
+	    			break;
+	  		default:
+	    			console.log("vul de dag van de week in zonder hoofdletters of punten");
+		}
+	}
+
+3. 	const car = "Audi";
+
+	if(car === "Audi"){
+		console.log("Great!");
+	}else if(car === "Mercedes"){
+		console.log("Bit great!");
+	}else if(car === "BMW"){
+		console.log("Hmm...");
+	}else if(car === "Opel"){
+		console.log("Not so great!")
+	}else{
+		console.log("check if you have written the name correctly and with the correct capitalisation.");
+	}
+
+6.	const job = "teacher";
+
+	switch(job){
+		case "developer":
+			console.log("LIKE!");
+			break;
+		case "teacher":
+		case "consultant":
+			console.log("Nice...");
+			break;
+		default:
+			console.log("I don't know...");
+	}
+
+8.	const maandag = true;
+	
+	if(maandag ? console.log("patat") : console.log("pannenkoeken")){
+	}
+
+9. 	const car = "Audi";
+
+	if(car === "Audi"){
+		console.log("Great");
+	}else{
+		console.log("Meh");
+	}
+
+15.	 const city = "Amsterdam";
+
+	if(city === "Amsterdam" ? console.log("Koetjekoe") : console.log("Koetjeboeboe")){
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
