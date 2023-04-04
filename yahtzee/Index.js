@@ -27,7 +27,7 @@ let scoresnoak = [0,0,0,0,0,0,0];
 function getNaam(p) {
 	let naam = prompt("Wat is je naam?", "Naam");
 
-    	if (naam === "") return;
+    	if (naam === "" || naam === null) return;
      if (p===1) {
        	naam1.innerHTML = naam;
 		name1.innerHTML = "player 1 = " + naam;
