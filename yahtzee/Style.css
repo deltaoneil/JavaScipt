@@ -20,7 +20,7 @@ body{
 .name{
     text-align: center;
     min-height: max-content;
-    font-size:50px;
+    font-size: 40px;
     padding: 2%;
 	background-color: white;
 }

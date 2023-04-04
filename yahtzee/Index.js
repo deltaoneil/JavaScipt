@@ -1,6 +1,6 @@
 let p1Scores = []; 
 let p2Scores = [];
-var rollsLeft = 3; 
+let rollsLeft = 3; 
 let highscore = 0;
 let p1Turn = true;
 
@@ -23,6 +23,19 @@ let diceHold = [];
 sc = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 let scoreSingles = [0,0,0,0,0,0,0];
 let scoresnoak = [0,0,0,0,0,0,0];
+
+function getNaam(p) {
+	let naam = prompt("Wat is je naam?", "Naam");
+
+    	if (naam === "") return;
+     if (p===1) {
+       	naam1.innerHTML = naam;
+		name1.innerHTML = "player 1 = " + naam;
+    	}else{
+        	naam2.innerHTML = naam;
+		name2.innerHTML = "player 2 = " + naam;
+    	}
+}
 
 function roll(){
 	/* reset dice */
@@ -118,7 +131,7 @@ function checkNumOfAKind(){
 		
 	}
 
-	//console.log("scoresnoak : " + scoresnoak);	
+	console.log("scoresnoak : " + scoresnoak);	
 }
 
 function checkFullhouse(){
@@ -162,7 +175,7 @@ function checkYahtzee(){
 }
 
 function calculatePoints(dice){
-	var score = 0;
+	let score = 0;
 	for (let i = 1; i < 6; i++){
 		score = score + dice[i];
 	}
@@ -205,12 +218,18 @@ function calculatePoints(dice){
 }
 
 function endTurn(){
-	console.log("turn player 2");
+	console.log("end turn");
+	if(p1Turn = true){
+		
+	}
+	if(p1Turn = false){
+	
+	}
 	
 }
 
 function lockScore(i){
-	var score = 0;
+	let score = 0;
 	for (let i = 1; i < 6; i++){
 		score = score + dice[i];
 	}
@@ -275,21 +294,25 @@ function lockScore(i){
 
 function totals(){
 	//total top
-	var totalTop;
+	let totalTop;
+	
+	subtotalP1Locked.innerHTML = totalTop;
+
+	if(totalTop > 63){ 
+		bonusP1Locked.innerHTML = 35;
+		totalP1Locked.innerHTML = totalTop + 35;
+	}else{
+		totalP1Locked.innerHTML = totalTop;
+	}
 	
 	//total bottom
-	var totalBottom;
+	let totalBottom;
 
 	//grand total
 	grandP1Locked.innerHTML = totalTop + totalBottom;
 }
 
 function swapTurn(){
-	if(p1Turn === true){
-		p1Turn = false;
-	}else if(p1Turn === false){
-		p1Turn = true;
-	}
 }
 
 
