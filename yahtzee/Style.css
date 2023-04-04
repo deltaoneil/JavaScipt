@@ -58,7 +58,7 @@
     
 }
 
-.score--locked{
+.scoreLocked{
     text-align: center;
     background-color: beige;
 }
@@ -76,9 +76,9 @@
 .temp--score:hover{
     background-color: #6feeb7;
 }
-.score--indicator,.score--locked{
+.score--indicator,.scoreLocked{
     font-weight: bold;
-    font-size: large;
+    font-size: 18px;
 }
 .main{
     display:  flex;

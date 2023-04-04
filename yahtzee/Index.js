@@ -203,16 +203,52 @@ function calculatePoints(dice){
 	}
 	
 	console.log("De score="+ score);
-
-	
 }
 
-function lockScore(sc){
-	for(i = 1; 1 >= 13; i++){
-       	sc[i]++;
-   	}
-     console.log("je hebt gekozen voor : " + sc); 
-}
+function lockScore(i){
+	console.log("je hebt gekozen voor : " + sc); 
+	if(i === 1){
+		sc[1] = scoreSingles[1];
+		acesP1Locked.innerHTMl = sc[1];
+	}
+	if(i === 2){
+		sc[2] = scoreSingles[2];
+	}
+	if(i === 3){
+		sc[3] = scoreSingles[3];
+	}
+	if(i === 4){
+		sc[4] = scoreSingles[4];
+	}
+	if(i === 5){
+		sc[5] = scoreSingles[5];
+	}
+	if(i === 6){
+		sc[6] = scoreSingles[6];
+	}
+	if(i === 7){
+		sc[1] = scoreSingles[1];
+	}
+	if(i === 8){
+		sc[1] = scoreSingles[1];
+	}
+	if(i === 9){
+		sc[1] = scoreSingles[1];
+	}
+	if(i === 10){
+		sc[1] = scoreSingles[1];
+	}
+	if(i === 11){
+		sc[1] = scoreSingles[1];
+	}
+	if(i === 12){
+		sc[1] = scoreSingles[1];
+	}
+	if(i === 13){
+		sc[1] = scoreSingles[1];
+	}
+}	
+
 
 function totals(){
 	//total top
