@@ -1,35 +1,40 @@
-
+*{
+	
+}
 .content{
     width:100%;
     height: 100%;
     margin: 0 auto;
-    //border: 1px solid black;
     display: flex;
     flex-direction: column;
+	background-color: #684d32;
 }
 .header,.footer{
     border: 1px solid black;
     display: flex;
     min-height: fit-content;
     word-wrap:break-word;
+	background-color: white;
 }
 .name{
     text-align: center;
     min-height: max-content;
     font-size:50px;
-    padding: 5%;
+    padding: 2%;
+	background-color: white;
 }
 
 .player{
     display: flex;
-    gap: 10px;
-    
+    gap: 10px;    
     flex-direction: column;
+	background-color: white;
 }
 .player--item{
     border: 2px solid black;
     height: max-content;
     grid-template-columns: 3fr 1fr 1fr;
+	background-color: white;
 }
 .top,.singles,.score--indicator,.score--locked,.bottom,.combinations,.totals,.all--totals{
     display: grid;
@@ -54,20 +59,21 @@
     border-right: 1px solid black;
 }
 .score--indicator{
-    background-color: #6feeb7;
+    background-color: #7cf9d6;
     
 }
 
 .scoreLocked{
     text-align: center;
     background-color: beige;
+	line-height: 25px;
 }
 .temp--score{
 	width: 100%;
-	height: 25px;
+	height: 29px;
     	margin: auto;
     	text-align: center;
-	font-color: black;
+	color: black;
 	background-color: #7cf9d6;
 	border: 0px;
 	font-weight: bold;
@@ -78,7 +84,7 @@
 }
 .score--indicator,.scoreLocked{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 17px;
 }
 .main{
     display:  flex;
@@ -86,12 +92,13 @@
     flex-wrap: wrap;
     flex-basis: 10px;  
     justify-content: center;
-    border:  1px solid black;
+    border-top: 30px solid #684d32;
+	border-bottom: 30px solid #684d32;
 }
 
 .main--item{
     min-width: 30vw;
-    border:  0px solid black;
+    border:  0px;
 }
 .table{
     display: flex;
@@ -103,6 +110,7 @@
     background: #006400;
     margin: 10px;
     border: 10px solid #684d32;
+	padding-top: 80px;
 }
 .dice{
     width: 10vw;

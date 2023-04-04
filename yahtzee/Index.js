@@ -194,7 +194,6 @@ function calculatePoints(dice){
 		largeP1.innerHTML = 40;
 	}
 
-	
 	chanceP1.innerHTML = score;
 	
 
@@ -205,48 +204,72 @@ function calculatePoints(dice){
 	console.log("De score="+ score);
 }
 
+function endTurn(){
+	console.log("turn player 2");
+	
+}
+
 function lockScore(i){
-	console.log("je hebt gekozen voor : " + sc); 
+	var score = 0;
+	for (let i = 1; i < 6; i++){
+		score = score + dice[i];
+	}
+
+	//console.log("je hebt gekozen voor : " + sc); 
+
 	if(i === 1){
 		sc[1] = scoreSingles[1];
-		acesP1Locked.innerHTMl = sc[1];
 	}
+	acesP1Locked.innerHTML = sc[1];
 	if(i === 2){
 		sc[2] = scoreSingles[2];
 	}
+	twosP1Locked.innerHTML = sc[2];
 	if(i === 3){
 		sc[3] = scoreSingles[3];
 	}
+	threesP1Locked.innerHTML = sc[3];
 	if(i === 4){
 		sc[4] = scoreSingles[4];
 	}
+	foursP1Locked.innerHTML = sc[4];
 	if(i === 5){
 		sc[5] = scoreSingles[5];
 	}
+	fivesP1Locked.innerHTML = sc[5];
 	if(i === 6){
 		sc[6] = scoreSingles[6];
 	}
+	sixesP1Locked.innerHTML = sc[6];
 	if(i === 7){
-		sc[1] = scoreSingles[1];
+		sc[7] = scoreSingles[7];
 	}
+	tkindP1Locked.innerHTML = sc[7];
 	if(i === 8){
-		sc[1] = scoreSingles[1];
+		sc[8] = scoreSingles[8];
 	}
+	fkindP1Locked.innerHTML = sc[8];
 	if(i === 9){
-		sc[1] = scoreSingles[1];
+		sc[9] = 25;
 	}
+	fouseP1Locked.innerHTML = sc[9];
 	if(i === 10){
-		sc[1] = scoreSingles[1];
+		sc[10] = 30;
 	}
+	smallP1Locked.innerHTML = sc[10];
 	if(i === 11){
-		sc[1] = scoreSingles[1];
+		sc[11] = 40;
 	}
+	largeP1Locked.innerHTML = sc[11];
 	if(i === 12){
-		sc[1] = scoreSingles[1];
+		sc[12] = score;
 	}
+	chanceP1Locked.innerHTML = sc[12];
 	if(i === 13){
-		sc[1] = scoreSingles[1];
+		sc[13] = 50;
 	}
+	yahtzeeP1Locked.innerHTML = sc[13];
+	endTurn();
 }	
 
 
