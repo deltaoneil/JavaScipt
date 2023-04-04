@@ -1,0 +1,35 @@
+1. 	 When you use strict mode in JavaScript, you are opting in to a set of constraints that were designed to prevent certain types of mistakes and ambiguities that can arise in the language. 
+
+2.	"use strict";
+
+3.	zodat je minder fouten maakt en overzichtelijkere errors krijgt
+
+4.	een functie is een blok code die iets kan uitvoeren
+
+5.	een variable is iets wat informatie opslaat en een function is iets wat informatie uitvoert
+
+6.	de function body is de body in een function
+
+7. 	a6, b1, c2, d3+4, e5
+
+8.	niets
+
+9.	"Cheese"
+
+10.	"Cheese"
+	"Cheese"
+
+11.	"Je krijgt ${numberOfHugs} knuffels van mij <3"
+
+12.	"Je krijgt ${numberOfHugs} knuffels van mij <3"
+
+13.	Expected ")" but found "knuffels"
+
+14.	
+
+
+
+
+
+
+
