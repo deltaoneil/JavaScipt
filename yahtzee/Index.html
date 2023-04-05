@@ -46,12 +46,12 @@
                         </div>
                         <div class = "score--indicator top--item">
                             <!--de blauwe vakjes, hier kies je welke punten je wilt gebruiken-->
-                            <button class="temp--score" id="acesP1" onclick="lockScore(1)">0</button>
-                            <button class="temp--score" id="twosP1" onclick="lockScore(2)">0</p>
-                            <button class="temp--score" id="threesP1" onclick="lockScore(3)">0</p>
-                            <button class="temp--score" id="foursP1" onclick="lockScore(4)">0</p>
-                            <button class="temp--score" id="fivesP1" onclick="lockScore(5)">0</p>
-                            <button class="temp--score" id="sixesP1" onclick="lockScore(6)">0</p>
+                            <button class="temp--score" id="acesP1" onclick="lockScoreP1(1)">0</button>
+                            <button class="temp--score" id="twosP1" onclick="lockScoreP1(2)">0</p>
+                            <button class="temp--score" id="threesP1" onclick="lockScoreP1(3)">0</p>
+                            <button class="temp--score" id="foursP1" onclick="lockScoreP1(4)">0</p>
+                            <button class="temp--score" id="fivesP1" onclick="lockScoreP1(5)">0</p>
+                            <button class="temp--score" id="sixesP1" onclick="lockScoreP1(6)">0</p>
                         </div>
                         <div class ="scoreLocked top--item">
                             <!--de beige vakjes, hier zie je hoeveel punten er gewonnen zijn in die rij-->
@@ -64,7 +64,7 @@
 
                             <p class="locked--score" id="subtotalP1Locked">0</p>
                             <p class="locked--score" id="bonusP1Locked">0</p>
-                            <p class="locked--score" id="totalP1Locked">0</p>
+                            <p class="locked--score" id="totalTP1Locked">0</p>
                         </div>
 
                     </div>
@@ -80,13 +80,13 @@
                             <p>Total</p>
                         </div>
                         <div class = "score--indicator bottom--item">
-                            <button class="temp--score" id="tkindP1" onclick="lockScore(7)">0</p>
-                            <button class="temp--score" id="fkindP1" onclick="lockScore(8)">0</p>
-                            <button class="temp--score" id="fouseP1" onclick="lockScore(9)">0</p>
-                            <button class="temp--score" id="smallP1" onclick="lockScore(10)">0</p>
-                            <button class="temp--score" id="largeP1" onclick="lockScore(11)">0</p>
-                            <button class="temp--score" id="chanceP1" onclick="lockScore(12)">0</p>
-                            <button class="temp--score" id="yahtzeeP1" onclick="lockScore(13)">0</p>
+                            <button class="temp--score" id="tkindP1" onclick="lockScoreP1(7)">0</p>
+                            <button class="temp--score" id="fkindP1" onclick="lockScoreP1(8)">0</p>
+                            <button class="temp--score" id="fouseP1" onclick="lockScoreP1(9)">0</p>
+                            <button class="temp--score" id="smallP1" onclick="lockScoreP1(10)">0</p>
+                            <button class="temp--score" id="largeP1" onclick="lockScoreP1(11)">0</p>
+                            <button class="temp--score" id="chanceP1" onclick="lockScoreP1(12)">0</p>
+                            <button class="temp--score" id="yahtzeeP1" onclick="lockScoreP1(13)">0</p>
                         </div>
                         <div class ="scoreLocked bottom--item">
                             <p class="locked--score" id="tkindP1Locked">0</p>
@@ -97,7 +97,7 @@
                             <p class="locked--score" id="chanceP1Locked">0</p>
 
                             <p class="locked--score" id="yahtzeeP1Locked">0</p>
-                            <p class="locked--score" id="totalP1Locked">0</p>
+                            <p class="locked--score" id="totalBP1Locked">0</p>
                         </div>
                     </div>
                     <div class = "totals player--item ">
@@ -136,12 +136,12 @@
                             <p>Total</p>
                         </div>
                         <div class = "score--indicator top--item">
-                            <button class="temp--score" id="acesP2">0</p>
-                            <button class="temp--score" id="twosP2">0</p>
-                            <button class="temp--score" id="threesP2">0</p>
-                            <button class="temp--score" id="foursP2">0</p>
-                            <button class="temp--score" id="fivesP2">0</p>
-                            <button class="temp--score" id="sixesP2">0</p>
+                            <button class="temp--score" id="acesP2" onclick="lockScoreP2(1)">0</p>
+                            <button class="temp--score" id="twosP2" onclick="lockScoreP2(2)">0</p>
+                            <button class="temp--score" id="threesP2" onclick="lockScoreP2(3)">0</p>
+                            <button class="temp--score" id="foursP2" onclick="lockScoreP2(4)">0</p>
+                            <button class="temp--score" id="fivesP2" onclick="lockScoreP2(5)">0</p>
+                            <button class="temp--score" id="sixesP2" onclick="lockScoreP2(6)">0</p>
                         </div>
                         <div class ="scoreLocked top--item">
                             <p class="locked--score" id="acesP2Locked">0</p>
@@ -164,18 +164,18 @@
                             <p>Full house</p>
                             <p>Small straight</p>
                             <p>Large straight</p>
-                            <p>Yahtzee</p>
                             <p>Chance</p>
+                            <p>Yahtzee</p>
                             <p>Total</p>
                         </div>
                         <div class = "score--indicator bottom--item">
-                            <button class="temp--score" id="tkindP2">0</p>
-                            <button class="temp--score" id="fkindP2">0</p>
-                            <button class="temp--score" id="fouseP2">0</p>
-                            <button class="temp--score" id="smallP2">0</p>
-                            <button class="temp--score" id="largeP2">0</p>
-                            <button class="temp--score" id="chanvceP2">0</p>
-                            <button class="temp--score" id="yahtzeeP2">0</p>
+                            <button class="temp--score" id="tkindP2" onclick="lockScoreP2(7)">0</p>
+                            <button class="temp--score" id="fkindP2" onclick="lockScoreP2(8)">0</p>
+                            <button class="temp--score" id="fouseP2" onclick="lockScoreP2(9)">0</p>
+                            <button class="temp--score" id="smallP2" onclick="lockScoreP2(10)">0</p>
+                            <button class="temp--score" id="largeP2" onclick="lockScoreP2(11)">0</p>
+                            <button class="temp--score" id="chanceP2" onclick="lockScoreP2(12)">0</p>
+                            <button class="temp--score" id="yahtzeeP2" onclick="lockScoreP2(13)">0</p>
                         </div>
                         <div class ="scoreLocked bottom--item">
                             <p class="locked--score" id="tkindP2Locked">0</p>
