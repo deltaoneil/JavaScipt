@@ -3,6 +3,8 @@ let rollsLeft = 3;
 let p1Turn = true;
 let currentPlayer = "player1";
 
+let round = 0;
+
 let debugMode = false; 
 
 let reeks3 = false;
@@ -16,10 +18,46 @@ let largeStraight = false;
 let chance = false;
 let yahtzee = false;
 
-let scoreFouse = 0;
-let scoreSmall = 0;
-let scoreLarge = 0;
-let scoreYahtzee = 0;
+let scoreAcesP1 = 0;
+let scoreTwosP1 = 0;
+let scoreThreesP1 = 0;
+let scoreFoursP1 = 0;
+let scoreFivesP1 = 0;
+let scoreSixesP1 = 0;
+let scoreSubtotalP1 = 0;
+let scoreBonusP1 = 0;
+let scoreTotalTopP1 = 0;
+
+let scoreTkindP1 = 0;
+let scoreFkindP1 = 0;
+let scoreFouseP1 = 0;
+let scoreSmallP1 = 0;
+let scoreLargeP1 = 0;
+let scoreChanceP1 = 0;
+let scoreYahtzeeP1 = 0;
+let scoreTotalBottomP1 = 0;
+
+let scoreAcesP2 = 0;
+let scoreTwosP2 = 0;
+let scoreThreesP2 = 0;
+let scoreFoursP2 = 0;
+let scoreFivesP2 = 0;
+let scoreSixesP2 = 0;
+let scoreSubtotalP2 = 0;
+let scoreBonusP2 = 0;
+let scoreTotalTopP2 = 0;
+
+let scoreTkindP2 = 0;
+let scoreFkindP2 = 0;
+let scoreFouseP2 = 0;
+let scoreSmallP2 = 0;
+let scoreLargeP2 = 0;
+let scoreChanceP2 = 0;
+let scoreYahtzeeP2 = 0;
+let scoreTotalBottomP2 = 0;
+
+let scoreGrandTotalP1 = 0;
+let scoreGrandTotalP2 = 0;
 
 let dice = []; 
 let diceHold = [];
@@ -30,6 +68,12 @@ let sc2 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 let scoreSingles = [0,0,0,0,0,0,0];
 let scoresnoak = [0,0,0,0,0,0,0];
 
+let lockTopP1 = 0;
+let lockBottomP1 = 0;
+let lockTopP2 = 0;
+let lockBottomP2 = 0;
+
+let winnaar = "";
 
 function getNaam(p) {
 	let naam = prompt("Wat is je naam?", "Naam");
@@ -43,6 +87,8 @@ function getNaam(p) {
 		name2.innerHTML = "player 2 = " + naam;
     	}
 }
+
+
 
 function roll(){
 	/* reset dice */
@@ -93,7 +139,13 @@ function roll(){
 	if(debugMode){
 		rollsLeft = 1;
 	}
+
 	calculatePoints();
+	calculateGrandTotalP1();
+
+	if(round === 26){
+		endGame();
+	}
 }
 
 
@@ -273,7 +325,7 @@ function calculatePointsP1(dice){
 		scoreYahtzee = 50;
 		yahtzeeP1.innerHTML = scoreYahtzee;
 	}
-	console.log("De totale score van player 1 deze rol = "+ score);
+	//console.log("De totale score van player 1 deze rol = "+ score);
 }
 function lockScoreP1(i){
 	let score = 0;
@@ -285,26 +337,32 @@ function lockScoreP1(i){
 
 	if(i === 1){
 		sc1[1] = scoreSingles[1];
+		scoreAcesP1 = sc1[1];
 	}
 	acesP1Locked.innerHTML = sc1[1];
 	if(i === 2){
 		sc1[2] = scoreSingles[2];
+		scoreTwosP1 = sc1[2];
 	}
 	twosP1Locked.innerHTML = sc1[2];
 	if(i === 3){
 		sc1[3] = scoreSingles[3];
+		scoreThreesP1 = sc1[3];
 	}
 	threesP1Locked.innerHTML = sc1[3];
 	if(i === 4){
 		sc1[4] = scoreSingles[4];
+		scoreFoursP1 = sc1[4];
 	}
 	foursP1Locked.innerHTML = sc1[4];
 	if(i === 5){
 		sc1[5] = scoreSingles[5];
+		scoreFivesP1 = sc1[5];
 	}
 	fivesP1Locked.innerHTML = sc1[5];
 	if(i === 6){
 		sc1[6] = scoreSingles[6];
+		scoreSixesP1 = sc1[6];
 	}
 	sixesP1Locked.innerHTML = sc1[6];
 	if(i === 7){
@@ -313,6 +371,7 @@ function lockScoreP1(i){
 		}else{ 
 			sc1[7] = 0;
 		}
+		scoreTkindP1 = sc1[7];
 	}
 	tkindP1Locked.innerHTML = sc1[7];
 	if(i === 8){
@@ -321,6 +380,7 @@ function lockScoreP1(i){
 		}else{
 			sc1[8] = 0;
 		}
+		scoreFkindP1 = sc1[8];
 	}
 	fkindP1Locked.innerHTML = sc1[8];
 	if(i === 9){
@@ -330,6 +390,7 @@ function lockScoreP1(i){
 		}else{
 			sc1[9] = 0;
 		}
+		scoreFouseP1 = sc1[9];
 	}
 	fouseP1Locked.innerHTML = sc1[9];
 	if(i === 10){
@@ -339,6 +400,7 @@ function lockScoreP1(i){
 		}else{ 
 			sc1[10] = 0;
 		}
+		scoreSmallP1 = sc1[10];
 	}
 	smallP1Locked.innerHTML = sc1[10];
 	if(i === 11){
@@ -348,14 +410,12 @@ function lockScoreP1(i){
 		}else{
 			sc1[11] = 0;
 		}
+		scoreLargeP1 = sc1[11];
 	}
 	largeP1Locked.innerHTML = sc1[11];
 	if(i === 12){
-		if(chance){
-			sc1[12] = score;
-		}else{
-			sc1[12] = 0 ;
-		}
+		sc1[12] = score;
+		scoreChanceP1 = sc1[12];
 	}
 	chanceP1Locked.innerHTML = sc1[12];
 	if(i === 13){
@@ -365,41 +425,19 @@ function lockScoreP1(i){
 		}else{
 			sc1[13] = 0;
 		}
+		scoreYahtzeeP1 = sc1[13];
 	}
 	yahtzeeP1Locked.innerHTML = sc1[13];
+	
+	if(i < 7){
+		lockTopP1++;
+	}else{
+		lockBottomP1++;
+	}
+
+	console.log("lockTopP1 = " + lockTopP1 + " en lockBottomP1 = " + lockBottomP1);
 	endTurn();
 }			
-
-function totalsP1(){
-
-	let subtotal = 0;
-	let bonus = 0;
-	let totalTop = 0;
-
-	for(i = 1; i < 7; i++){
-		subtotal = subtotal + sc1[i];
-	}
-	subtotalP1Locked.innerHTML = subtotal;
-
-	if(subtotal > 63){ 
-		bonus = 35;
-		bonusP1Locked.innerHTML = bonus;
-	}
-
-	totalTop = subtotal + bonus;
-	totalTP1Locked.innerHTML = totalTop;
-
-	let totalBottom;
-	
-	for(i = 7; i < 14; i++){
-		totalBottom = totalBottom + sc1[i];
-	}
-
-	totalBP1Locked.innerHTML = totalBottom;
-
-	grandP1Locked.innerHTML = totalTop + totalBottom;
-}
-
 
 function calculatePointsP2(dice){
 	let score = 0;
@@ -413,7 +451,7 @@ function calculatePointsP2(dice){
 	foursP2.innerHTML = scoreSingles[4];
 	fivesP2.innerHTML = scoreSingles[5];
 	sixesP2.innerHTML = scoreSingles[6];
-
+	
 	if(threeOfAKind){
 		tkindP2.innerHTML = score;
 	}
@@ -432,13 +470,14 @@ function calculatePointsP2(dice){
 		scoreLarge = 40;
 		largeP2.innerHTML = scoreLarge;
 	}
+
 	chanceP2.innerHTML = score;
 		
 	if(yahtzee){
 		scoreYahtzee = 50;
 		yahtzeeP2.innerHTML = scoreYahtzee;
 	}
-	console.log("De totale score van player 2 deze rol = "+ score);
+	//console.log("De totale score van player 2 deze rol = "+ score);
 }
 function lockScoreP2(i){
 	let score = 0;
@@ -450,42 +489,50 @@ function lockScoreP2(i){
 
 	if(i === 1){
 		sc2[1] = scoreSingles[1];
+		scoreAcesP2 = sc2[1];
 	}
 	acesP2Locked.innerHTML = sc2[1];
 	if(i === 2){
 		sc2[2] = scoreSingles[2];
+		scoreTwosP2 = sc2[2];
 	}
 	twosP2Locked.innerHTML = sc2[2];
 	if(i === 3){
 		sc2[3] = scoreSingles[3];
+		scoreThreesP2 = sc2[3];
 	}
 	threesP2Locked.innerHTML = sc2[3];
 	if(i === 4){
 		sc2[4] = scoreSingles[4];
+		scoreFoursP2 = sc2[4];
 	}
 	foursP2Locked.innerHTML = sc2[4];
 	if(i === 5){
 		sc2[5] = scoreSingles[5];
+		scoreFivesP2 = sc2[5];
 	}
 	fivesP2Locked.innerHTML = sc2[5];
 	if(i === 6){
 		sc2[6] = scoreSingles[6];
+		scoreSixesP2 = sc2[6];
 	}
 	sixesP2Locked.innerHTML = sc2[6];
 	if(i === 7){
 		if(threeOfAKind){
 			sc2[7] = score;
-		}else{
+		}else{ 
 			sc2[7] = 0;
 		}
+		scoreTkindP2 = sc2[7];
 	}
 	tkindP2Locked.innerHTML = sc2[7];
 	if(i === 8){
 		if(fourOfAKind){
-			sc2[8] = score;
-		}else{ 
+			sc2[8] = score; 
+		}else{
 			sc2[8] = 0;
 		}
+		scoreFkindP2 = sc2[8];
 	}
 	fkindP2Locked.innerHTML = sc2[8];
 	if(i === 9){
@@ -495,64 +542,110 @@ function lockScoreP2(i){
 		}else{
 			sc2[9] = 0;
 		}
+		scoreFouseP2 = sc2[9];
 	}
 	fouseP2Locked.innerHTML = sc2[9];
 	if(i === 10){
 		scoreSmall = 30;
 		if(smallStraight){
 			sc2[10] = scoreSmall;
-		}else{
+		}else{ 
 			sc2[10] = 0;
 		}
+		scoreSmallP2 = sc2[10];
 	}
 	smallP2Locked.innerHTML = sc2[10];
 	if(i === 11){
 		scoreLarge = 40;
 		if(largeStraight){
-			sc2[11] = scoreLarge;	
+			sc2[11] = scoreLarge;
 		}else{
 			sc2[11] = 0;
 		}
+		scoreLargeP2 = sc2[11];
 	}
 	largeP2Locked.innerHTML = sc2[11];
 	if(i === 12){
-		if(chance){
-			sc2[12] = score;
-		}else{
-			sc2[12] = 0;
-		}
+		sc2[12] = score;
+		scoreChanceP2 = sc2[12];
 	}
 	chanceP2Locked.innerHTML = sc2[12];
 	if(i === 13){
 		scoreYahtzee = 50;
 		if(yahtzee){
 			sc2[13] = scoreYahtzee;
-		}else{ 
+		}else{
 			sc2[13] = 0;
 		}
+		scoreYahtzeeP2 = sc2[13];
 	}
 	yahtzeeP2Locked.innerHTML = sc2[13];
-	endTurn();
-}			
-
-function totalsP2(){
-	//total top
-	let totalTop;
-
-	subtotalP2Locked.innerHTML = totalTop;
-
-	if(totalTop > 63){ 
-		bonusP2Locked.innerHTML = 35;
-		totalP2Locked.innerHTML = totalTop + 35;
+	
+	if(i < 7){
+		lockTopP2++;
 	}else{
-		totalP2Locked.innerHTML = totalTop;
+		lockBottomP2++;
 	}
-		
-	//total bottom
-	let totalBottom;
 
-	//grand total
-	grandP2Locked.innerHTML = totalTop + totalBottom;
+	console.log("lockTopP2 = " + lockTopP2 + " en lockBottomP2 = " + lockBottomP2);
+	endTurn();
+}
+	
+
+
+
+function calculateGrandTotalP1(){
+	
+	if(lockTopP1 === 6){
+		scoreSubtotalP1 = scoreAcesP1 + scoreTwosP1 + scoreThreesP1 + scoreFoursP1 + scoreFivesP1 + scoreSixesP1;
+		//console.log("werkt");
+		subtotalP1Locked.innerHTML = scoreSubtotalP1; 
+		if(scoreSubtotalP1 > 63){
+			scoreBonusP1 = 35;
+			bonusP1Locked.innerHTML = scoreBonusP1;
+		}
+		scoreTotalTopP1 = scoreSubtotalP1 + scoreBonusP1;
+		totalTopP1Locked.innerHTML = scoreTotalTopP1;
+	}
+	
+	if(lockBottomP1 === 7){
+		scoreTotalBottomP1 = scoreTkindP1 + scoreFkindP1 + scoreFouseP1 + scoreSmallP1 + scoreLargeP1 + scoreChanceP1 + scoreYahtzeeP1;
+		
+		totalBottomP1Locked.innerHTML = scoreTotalBottomP1;
+	}
+
+	if(lockTopP1 === 6 && lockBottomP1 === 7){
+		scoreGrandTotalP1 = scoreTotalTopP1 + scoreTotalBottomP1;
+		grandP1Locked.innerHTML  = scoreGrandTotalP1;
+	}
+	console.log("lockBottomP1 = " + lockBottomP1 + " score = " + scoreTotalBottomP1);
+}
+
+function calculateGrandTotalP2(){
+	
+	if(lockTopP2 === 6){
+		scoreSubtotalP2 = scoreAcesP2 + scoreTwosP2 + scoreThreesP2 + scoreFoursP2 + scoreFivesP2 + scoreSixesP2;
+		//console.log("werkt");
+		subtotalP2Locked.innerHTML = scoreSubtotalP2; 
+		if(scoreSubtotalP2 > 63){
+			scoreBonusP2 = 35;
+			bonusP2Locked.innerHTML = scoreBonusP2;
+		}
+		scoreTotalTopP2 = scoreSubtotalP2 + scoreBonusP2;
+		totalTopP2Locked.innerHTML = scoreTotalTopP2;
+	}
+	
+	if(lockBottomP2 === 7){
+		scoreTotalBottomP2 = scoreTkindP2 + scoreFkindP2 + scoreFouseP2 + scoreSmallP2 + scoreLargeP2 + scoreChanceP2 + scoreYahtzeeP2;
+		
+		totalBottomP2Locked.innerHTML = scoreTotalBottomP2;
+	}
+
+	if(lockTopP2 === 6 && lockBottomP2 === 7){
+		scoreGrandTotalP2 = scoreTotalTopP2 + scoreTotalBottomP2;
+		grandP2Locked.innerHTML  = scoreGrandTotalP2;
+	}
+	console.log("lockBottomP2 = " + lockBottomP2 + " score = " + scoreTotalBottomP2);
 }
 
 
@@ -579,4 +672,25 @@ function endTurn(){
 	rollsLeft = 3;
 	turn.innerHTML = currentPlayer;
 	resetDice();
+	round++;
+}
+
+
+<!-- einde game wil je opnieuw? --!>
+
+function endGame(){
+	if(scoreGrandTotalP1 > scoreGrandTotalP2){
+		winnaar = "Player 1.";
+	}else if(scoreGrandTotalP2 > scoreGrandTotalP1){
+		winnaar = "Player 2.";
+	}else{
+		winnaar = "Geen winnaar, gelijk spel."
+	}
+	
+    	const response = confirm("De game is uitgespeeld. de winnaar is " + winnaar + " Wil je opnieuw spelen?");
+	
+	if(response === true){
+		location.reload();
+	}
+	
 }
