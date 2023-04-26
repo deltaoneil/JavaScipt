@@ -1,0 +1,30 @@
+Deel 1: kennisvragen
+
+- opdracht 1 (6 punten) 
+	DOM manipulatie is wanneer je vanuit het javascript document 
+	de html veranderd.
+	code voorbeeld = ".innerHTML"
+
+- opdracht 2 (2 punten)
+	truthy values zijn values die automatisch true zijn, 
+	falsy values zijn values die automaties false zijn.
+	code voorbeeld = "0" voor false 
+
+- opdracht 3 (6 punten)
+	a) een array is een opsla plek voor variables
+	b) een object is voor properties, een array is voor variables.
+
+- opdracht 4 (8 punten)
+	a) een for loop is een statement die een waarde neemt en runned 	 	   een stukje code tot de conditie bij die waarde komt.
+	b) een while loop is een statement die een bepaalde stuk code 	 	   herhaalt totdat de conditie niet meer waar is. 
+	c) allebei de for loop en while loop gebruiken een waarde en een 	   conditie.
+	d) het verschil is dat een for loop maar 1 lijn code runned en 	 	   een while loop kan meerdere lijnen code runnen.
+
+- opdracht 5 (8 punten)
+	a) if-else is een statement waarbij hij verschillende code runned 	   op basis van een conditie. 
+	b) switch is een statement waarbij hij op basis van variabele 	 	   antwoorden van code verwisselt.
+	c) je gebruikt een switch statement als je een variabele 	 		   gebruikt.
+	   je gebruikt een if-else statement als je iets anders dan een 	 	   variabele gebruikt.
+
+
+

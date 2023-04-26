@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button id="addBtn">Add element!</button>
+  <div id="list-container">
+    <div id="list"></div>
+  </div>
+
+  <style>
+    * {
+      padding: 10px;
+      margin: 0px;
+    }
+
+    .li-element {
+      text-align: center;
+      display: inline-block;
+      padding: 35px;
+      width: 100px;
+    }
+
+    #addBtn {
+      background-color: pink;
+      padding: 10px 20px;
+      font-size: 20px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+  </style>
+
+  <script>
+    const addBtn = document.getElementById("addBtn");
+    const list = document.getElementById("list");
+    let counter = 1;
+    const colors = ["blue", "green", "yellow", "purple", "red"];
+    let colorIndex = 0;
+	let arr = [Math.round(Math.random() * 8900) + 100,
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100,
+           Math.round(Math.random() * 8900) + 100,
+           Math.round(Math.random() * 8900) + 100,
+           Math.round(Math.random() * 8900) + 100,
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100,
+           Math.round(Math.random() * 8900) + 100,
+           Math.round(Math.random() * 8900) + 100,
+           Math.round(Math.random() * 8900) + 100,
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100,
+           Math.round(Math.random() * 8900) + 100,
+           Math.round(Math.random() * 8900) + 100,
+           Math.round(Math.random() * 8900) + 100,
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100,
+           Math.round(Math.random() * 8900) + 100,
+           Math.round(Math.random() * 8900) + 100,
+           Math.round(Math.random() * 8900) + 100,
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100, 
+           Math.round(Math.random() * 8900) + 100,
+           Math.round(Math.random() * 8900) + 100,
+	];
+
+    addBtn.addEventListener("click", function () {
+      if (counter <= 49) {
+   		const newItem = document.createElement("div");
+    		newItem.innerHTML = arr[counter];
+    		newItem.style.backgroundColor = colors[colorIndex];
+    		newItem.classList.add("li-element");
+    		list.appendChild(newItem);
+    		counter++;
+    		colorIndex = (colorIndex + 1) % colors.length;
+	  }
+    });
+
+  </script>
+</body>
+
+</html>
